@@ -13,4 +13,8 @@ attr_reader :name, :distance, :terrain,
     def loop?
         @loop
     end
+
+    def total_distance
+        @loop ? @distance : @distance * 2
+    end
 end
