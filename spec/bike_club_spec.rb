@@ -23,7 +23,7 @@ RSpec.describe BikeClub do
         it 'can tell us which biker has logged the most rides' do
             bike_club = BikeClub.new("Cruisers")
             biker = Biker.new("Sean", 30)
-            bike_club.add_biker("Sean")
+            bike_club.add_biker(biker)
 
             
             biker.learn_terrain!(:gravel)
