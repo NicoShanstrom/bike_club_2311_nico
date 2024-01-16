@@ -6,7 +6,7 @@ attr_reader :name, :distance, :terrain,
     @distance = info[:distance]
     @terrain = info[:terrain]
     @loop = info[:loop]
-    @total_distance = info[:total_distance]
+    # @total_distance = info[:total_distance]
 
     end
 
