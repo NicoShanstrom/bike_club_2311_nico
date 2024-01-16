@@ -13,9 +13,10 @@ class BikeClub
     end
 
     def most_rides
-        most_active_biker = @list.keys.max_by { |name| @list[name].rides.count }
-  
-        most_active_biker
+
+    most_active_biker = @list.max_by { |biker| biker.rides.values.count }&.name
+
+    most_active_biker
     end
-  
+    
 end
