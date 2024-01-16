@@ -13,8 +13,8 @@ RSpec.describe Ride do
 
         ride2 = Ride.new({name: "Town Lake", distance: 14.9, 
                         loop: true, terrain: :gravel})
-        expect(ride1.loop?).to eq(true)
-        expect(ride1.total_distance).to eq(14.9)
+        expect(ride2.loop?).to eq(true)
+        expect(ride2.total_distance).to eq(14.9)
 
     end
 end
